@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{site.title}}{% if title %} — {{title}} {% endif %}</title>
+  <meta name="description" content="{% if description %}{{description}}{% else %}{{site.description}}{% endif %}" />
+  <meta name="author" content="{{site.authorName}}" />
+
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!--
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#00a300" />
+    <meta name="theme-color" content="#ffffff" />
+  -->
+
+</head>
+
+<body>
+  {{ content }}
+  <script src="/assets/js/scripts.js" type="text/javascript"></script>
+</body>
+
+</html>
